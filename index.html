@@ -43,14 +43,10 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Body Mass Index</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p>BMI (Body Mass Index) is a method to measure your weight category. There are four weight categories in BMI, and they are underweight, normal weight, overweight, or obese. We can identify our health status by looking at which category we belonged to. Ideally, we want to stay in &quot;normal weight&quot; zone because the risk of getting health disease (eg: stroke, diabetes) increases in the other zone. </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,10 +54,80 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>BMI Calculation</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>To calculate BMI, we need our height and our weight. </p>
+
+<pre><code class="r">height = 1.73 # meter
+weight = 73   # KG
+
+BMI = weight/(height^2)
+BMI #your BMI
+</code></pre>
+
+<pre><code>## [1] 24.39106
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Visualizing BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are a lot of online BMI calculator but to my knowledge, there is still no application that tries to visualize BMI interactively. This project is an attempt to visualize BMI. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Visualzing BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>In this project, I have created an app that allows user to visualize BMI interactively. </p>
+
+<p><img width=900px height=400px src="http://euwern.github.io/dataproduct_slides/demo.png"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Visualizing BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As user interactively slides the weight control, the BMI number will change and dependening on which zones it falls into, the color of the bar will change. </p>
+
+<table><thead>
+<tr>
+<th>Weight Category</th>
+<th align="center">Color</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Underweight</td>
+<td align="center">red</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td align="center">green</td>
+</tr>
+<tr>
+<td>Overweight</td>
+<td align="center">yellow</td>
+</tr>
+<tr>
+<td>Obese</td>
+<td align="center">red</td>
+</tr>
+</tbody></table>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +138,32 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Body Mass Index'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='BMI Calculation'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Visualizing BMI'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Visualzing BMI'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Visualizing BMI'>
+         5
       </a>
     </li>
   </ul>
